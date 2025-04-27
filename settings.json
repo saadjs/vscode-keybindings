@@ -1,5 +1,5 @@
 {
-	"workbench.tree.indent": 16,
+	"workbench.tree.indent": 18,
 	"files.autoSave": "onFocusChange",
 	"prettier.tabWidth": 4,
 	"prettier.useTabs": true,
@@ -31,12 +31,10 @@
 		"terminalCursor.foreground": "#ffff00"
 	},
 	"git.enableSmartCommit": true,
-	"explorer.confirmDelete": false,
 	"[python]": {
 		"editor.formatOnType": true,
 		"editor.defaultFormatter": "ms-python.black-formatter"
 	},
-	"explorer.confirmDragAndDrop": false,
 	"editor.inlineSuggest.enabled": true,
 	"git.confirmSync": false,
 	"editor.guides.bracketPairs": "active",
@@ -56,7 +54,6 @@
 	"git.openRepositoryInParentFolders": "never",
 	"javascript.updateImportsOnFileMove.enabled": "always",
 	"workbench.editor.empty.hint": "hidden",
-	"explorer.confirmPasteNative": false,
 	"[json]": {
 		"editor.defaultFormatter": "vscode.json-language-features"
 	},
@@ -73,7 +70,6 @@
 	"typescript.updateImportsOnFileMove.enabled": "always",
 	"zenMode.fullScreen": false,
 	"workbench.activityBar.location": "top",
-	"github.copilot.editor.enableAutoCompletions": true,
 	"zenMode.showTabs": "none",
 	"vim.easymotion": true,
 	"vim.incsearch": true,
@@ -105,5 +101,11 @@
 	"vim.handleKeys": {
 		"<C-a>": false,
 		"<C-f>": false
-	}
+	},
+	"workbench.iconTheme": "material-icon-theme",
+	"material-icon-theme.hidesExplorerArrows": true,
+	"explorer.compactFolders": false,
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	"explorer.confirmPasteNative": false
 }
