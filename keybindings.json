@@ -39,82 +39,86 @@
 		"key": "cmd+9",
 		"command": "workbench.action.openEditorAtIndex9"
 	},
-	// {
-	//     "key": "ctrl+s",
-	//     "command": "workbench.view.scm",
-	//     "when": "workbench.scm.active"
-	// },
-	// {
-	//     "key": "n",
-	//     "command": "explorer.newFile",
-	//     "when": "filesExplorerFocus && !inputFocus"
-	// },
-	// {
-	//     "key": "k",
-	//     "command": "list.focusUp",
-	//     "when": "filesExplorerFocus && !inputFocus"
-	// },
-	// {
-	//     "key": "j",
-	//     "command": "list.focusDown",
-	//     "when": "filesExplorerFocus && !inputFocus"
-	// },
-	// {
-	//     "key": "shift+n",
-	//     "command": "explorer.newFolder",
-	//     "when": "explorerViewletFocus"
-	// },
-	// {
-	//     "key": "ctrl+d",
-	//     "command": "workbench.view.debug",
-	//     "when": "viewContainer.workbench.view.explorer.enabled"
-	// },
-	// {
-	//     "key": "ctrl+d",
-	//     "command": "-deleteRight",
-	//     "when": "textInputFocus"
-	// },
-	// {
-	//     "key": "ctrl+j",
-	//     "command": "-editor.action.joinLines",
-	//     "when": "editorTextFocus && !editorReadonly"
-	// },
-	// {
-	//     "key": "ctrl+h",
-	//     "command": "workbench.action.navigateLeft"
-	// },
-	// {
-	//     "key": "ctrl+e",
-	//     "command": "workbench.files.action.focusFilesExplorer",
-	//     "when": "viewContainer.workbench.view.explorer.enabled"
-	// },
-	// {
-	//     "key": "ctrl+l",
-	//     "command": "workbench.action.navigateRight"
-	// },
-	// {
-	//     "key": "ctrl+k",
-	//     "command": "workbench.action.navigateUp"
-	// },
-	// {
-	//     "key": "ctrl+j",
-	//     "command": "workbench.action.navigateDown"
-	// },
-	// {
-	//     "key": "ctrl+cmd+j",
-	//     "command": "workbench.action.terminal.resizePaneDown",
-	//     "when": "terminalFocus"
-	// },
-	// {
-	//     "key": "ctrl+w c",
-	//     "command": "workbench.action.closeActiveEditor",
-	//     "when": "editorTextFocus"
-	// },
-	// {
-	//     "key": "ctrl+cmd+k",
-	//     "command": "workbench.action.terminal.resizePaneUp",
-	//     "when": "terminalFocus"
-	// },
+	{
+		"key": "n",
+		"command": "explorer.newFile",
+		"when": "filesExplorerFocus && !inputFocus"
+	},
+	{
+		"key": "k",
+		"command": "list.focusUp",
+		"when": "filesExplorerFocus && !inputFocus"
+	},
+	{
+		"key": "j",
+		"command": "list.focusDown",
+		"when": "filesExplorerFocus && !inputFocus"
+	},
+	{
+		"key": "shift+n",
+		"command": "explorer.newFolder",
+		"when": "explorerViewletFocus"
+	},
+	{
+		"key": "ctrl+d",
+		"command": "workbench.view.debug",
+		"when": "viewContainer.workbench.view.explorer.enabled"
+	},
+	{
+		"key": "ctrl+d",
+		"command": "-deleteRight",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "ctrl+j",
+		"command": "-editor.action.joinLines",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+h",
+		"command": "workbench.action.navigateLeft"
+	},
+	{
+		"key": "ctrl+e",
+		"command": "workbench.files.action.focusFilesExplorer"
+	},
+	{
+		"key": "ctrl+e",
+		"command": "workbench.action.toggleSidebarVisibility",
+		"when": "filesExplorerFocus"
+	},
+	{
+		"key": "ctrl+s",
+		"command": "workbench.view.scm",
+		"when": "workbench.scm.active"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "workbench.action.navigateRight"
+	},
+	{
+		"key": "ctrl+k",
+		"command": "workbench.action.navigateUp"
+	},
+	{
+		"key": "ctrl+j",
+		"command": "workbench.action.navigateDown"
+	},
+	{
+		"key": "ctrl+cmd+j",
+		"command": "workbench.action.terminal.resizePaneDown",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "ctrl+w c",
+		"command": "workbench.action.closeActiveEditor",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+cmd+k",
+		"command": "workbench.action.terminal.resizePaneUp",
+		"when": "terminalFocus"
+	},
 	// Navigation
 	{
 		"key": "ctrl+h",
@@ -369,5 +373,26 @@
 		"key": "cmd+l cmd+c",
 		"command": "-extension.liveServer.goOffline",
 		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+o",
+		"command": "workbench.action.navigateBack",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+i",
+		"command": "workbench.action.navigateForward",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "cmd+k d",
+		"command": "editor.action.revealDefinition",
+		"when": "editorTextFocus"
+	},
+	// Copilot Chat
+	{
+		"key": "tab",
+		"when": "chatInputHasFocus && chatIsEnabled && !lockedToCodingAgent && !quickChatHasFocus && chatLocation == 'panel'",
+		"command": "workbench.action.chat.toggleAgentMode"
 	}
 ]
