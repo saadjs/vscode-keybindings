@@ -3,7 +3,7 @@
 	"files.autoSave": "onFocusChange",
 	"prettier.tabWidth": 4,
 	"prettier.useTabs": true,
-	"editor.fontFamily": "Fira Code",
+	"editor.fontFamily": "Geist Mono",
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"prettier.singleQuote": true,
 	"terminal.integrated.fontSize": 15,
@@ -39,14 +39,14 @@
 	"git.confirmSync": false,
 	"editor.guides.bracketPairs": "active",
 	"security.workspace.trust.untrustedFiles": "open",
-	"editor.fontSize": 14,
+	"editor.fontSize": 15,
 	"editor.linkedEditing": true,
 	"editor.stickyScroll.enabled": true,
 	"terminal.integrated.enableMultiLinePasteWarning": false,
 	"extensions.ignoreRecommendations": true,
 	"liveServer.settings.donotShowInfoMsg": true,
 	"editor.suggest.showWords": false,
-	"workbench.startupEditor": "welcomePageInEmptyWorkbench",
+	"workbench.startupEditor": "none",
 	"workbench.colorTheme": "Night Owl (No Italics)",
 	"extensions.experimental.affinity": {
 		"asvetliakov.vscode-neovim": 1
@@ -55,7 +55,7 @@
 	"javascript.updateImportsOnFileMove.enabled": "always",
 	"workbench.editor.empty.hint": "hidden",
 	"[json]": {
-		"editor.defaultFormatter": "vscode.json-language-features"
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"editor.minimap.enabled": false,
 	"editor.accessibilitySupport": "off",
@@ -107,5 +107,18 @@
 	"explorer.compactFolders": false,
 	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
-	"explorer.confirmPasteNative": false
+	"explorer.confirmPasteNative": false,
+	"workbench.layoutControl.enabled": false,
+	"chat.editing.confirmEditRequestRetry": false,
+	"python.analysis.typeCheckingMode": "standard",
+	"workbench.editor.limit.enabled": true,
+	"workbench.editor.limit.value": 4,
+	"workbench.editor.limit.perEditorGroup": true,
+	"workbench.externalBrowser": "chrome",
+	"github.copilot.nextEditSuggestions.enabled": false,
+	"prettier.requireConfig": true,
+	"chat.agent.maxRequests": 50,
+	"chat.editing.confirmEditRequestRemoval": false,
+	"workbench.secondarySideBar.defaultVisibility": "hidden",
+	"chat.commandCenter.enabled": false
 }
