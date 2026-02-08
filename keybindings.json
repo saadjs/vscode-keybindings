@@ -394,5 +394,25 @@
 		"key": "tab",
 		"when": "chatInputHasFocus && chatIsEnabled && !lockedToCodingAgent && !quickChatHasFocus && chatLocation == 'panel'",
 		"command": "workbench.action.chat.toggleAgentMode"
+	},
+	{
+		"key": "cmd+enter",
+		"command": "workbench.action.chat.submit",
+		"when": "chatInputHasText && inChatInput && !chatSessionRequestInProgress && !withinEditSessionDiff"
+	},
+	{
+		"key": "enter",
+		"command": "-workbench.action.chat.submit",
+		"when": "chatInputHasText && inChatInput && !chatSessionRequestInProgress && !withinEditSessionDiff"
+	},
+	{
+		"key": "shift+cmd+enter",
+		"command": "workbench.action.chat.submitWithCodebase",
+		"when": "chatInputHasText && inChatInput && !chatSessionRequestInProgress"
+	},
+	{
+		"key": "cmd+enter",
+		"command": "-workbench.action.chat.submitWithCodebase",
+		"when": "chatInputHasText && inChatInput && !chatSessionRequestInProgress"
 	}
 ]
